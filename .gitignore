@@ -1,13 +1,26 @@
-.claude
+# OS
 .DS_Store
 
-temp/
-
-pyproject.toml
-uv.lock
-
+# Python
 .venv/
 .python-version
-main.py
-
 __pycache__/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Project
+temp/
+research/
+
+# Local agent tooling
+.claude/
+.agents/
+# Anchored: an unanchored "scripts/" also matches skills/<name>/scripts/,
+# which silently drops every new skill's bundled tooling from git.
+/scripts/
+
+skills-lock.json
+
+uv.lock
